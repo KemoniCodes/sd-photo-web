@@ -24,7 +24,7 @@
 } */
 
 body {
-  @apply bg-ghostWite text-midnightBlack font-PPNeueMontreal mx-7 mt-6;
+  @apply bg-ghostWite text-midnightBlack font-PPNeueMontreal mx-[27px] mt-6;
 }
 
 .navlist li {
