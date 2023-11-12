@@ -63,7 +63,7 @@ const CollectionImages = () => {
 
           <Image
             alt={collec.mainImage.alt}
-            src={collec.mainImage}
+            src={`${collec.mainImage}`}
             width={311}
             height={400}
             onMouseEnter={() => handleMouseEnter(collec._id)}
