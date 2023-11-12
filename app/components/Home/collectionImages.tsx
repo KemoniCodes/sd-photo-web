@@ -69,7 +69,7 @@ const CollectionImages = () => {
             onMouseEnter={() => handleMouseEnter(collec._id)}
             onMouseLeave={() => handleMouseLeave(collec._id)}
             priority={true}
-            className={`transition-transform transform w-auto' ${hoverStates[collec._id] ? ' transition-imageHover absolute z-10 scale-125' : ''
+            className={`transition-transform transform w-auto' ${hoverStates[collec._id] ? ' transition-imageHover absolute z-10 scale-125 ease-in duration-400' : ''
               }`}
           />
           {hoverStates[collec._id] && (
