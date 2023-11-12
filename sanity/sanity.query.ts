@@ -4,12 +4,14 @@ import client from "./sanity.client";
 export async function getCollection() {
   return client.fetch(
     groq`*[_type == "collection"]{
-        _id,
-        collectionTitle,
-        slug,
-        hoverColor,
-        mainImage{alt, "image": asset->_ref},
-        images
-      }`
+      _id,
+      collectionTitle,
+      slug,
+      hoverColor,
+      "mainImage": mainImage.asset->url,
+      "mainImageAlt": mainImage.alt,       
+      "images": images[].asset->url, 
+      "imageAlts": images[].alt
+    }`
   );
 }

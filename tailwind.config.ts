@@ -15,6 +15,9 @@ const config: Config = {
       fontFamily: {
         "PPNeueMontreal": "var(--PPNeueMontreal)"
       },
+      transitionProperty: {
+        "imageHover": " 0.2s ease"
+      }
     },
   },
   plugins: [],

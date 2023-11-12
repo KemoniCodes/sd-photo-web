@@ -10,7 +10,7 @@
 }
 
 :root {
-  --ghostWhite: #FBFBFB;
+  --ghostWhite: #fbfbfb;
   --midnightBlack: #0a0a0a;
   --PPNeueMontreal: "PPNeueMontreal-Book";
 }
@@ -23,6 +23,11 @@
   }
 } */
 
+html,
+body {
+  @apply h-full;
+}
+
 body {
   @apply bg-ghostWite text-midnightBlack font-PPNeueMontreal mx-[27px] mt-6;
 }
@@ -30,3 +35,53 @@ body {
 .navlist li {
   @apply uppercase text-[17.452px] tracking-[0.349px] leading-[1.3rem] text-right;
 }
+
+h1 {
+  @apply uppercase text-[260.332px] tracking-[2.603px] leading-[14.5rem];
+}
+
+h2 {
+  @apply uppercase text-[149px] tracking-[1.609px];
+}
+
+.home .imagesGrid > * {
+  @apply min-w-[311px] max-w-[500px] h-[400px] relative;
+  /* bg-gray-400  */
+}
+.home .imagesGrid > div:nth-child(odd) {
+  @apply top-16;
+}
+
+.home .imagesGrid > div:nth-child(2) {
+  @apply justify-self-center w-full;
+}
+
+.home .imagesGrid > div:nth-child(2) > * {
+  @apply w-[80%];
+}
+
+.home .imagesGrid > div:nth-child(3) {
+  @apply mr-[27px] !justify-self-end;
+}
+
+.home .imagesGrid > div:nth-child(6n) {
+  @apply mr-[27px] !justify-self-end w-full;
+}
+
+.home .imagesGrid > div:nth-child(6n) > * {
+  @apply w-full;
+}
+
+.home .imagesGrid > div:nth-child(7n) {
+  @apply w-full -top-24;
+}
+
+.home .imagesGrid > div:nth-child(7n) > * {
+  @apply w-[80%];
+}
+
+
+.home .imagesGrid > div:nth-child(odd):not(:first-child) {
+  @apply justify-self-center;
+}
+

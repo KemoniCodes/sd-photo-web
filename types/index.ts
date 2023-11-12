@@ -14,13 +14,4 @@ export type CollectionType = {
     }
   ];
 };
-
-export type NavigationType = {
-    _id: string;
-    navLinks: {
-      _type: 'object'; // Specify the _type field here
-      navigationTitle: string;
-      slug: string;
-    }[];
-  };
   
