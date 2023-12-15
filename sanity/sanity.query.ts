@@ -21,7 +21,7 @@ export async function getCollectionBySlug(slug: string) {
     groq`*[_type == "collection" && slug.current == $slug][0]{
       _id,
       collectionTitle,
-      slug,
+      "slug": slug.current,
       hoverColor,
       "mainImage": mainImage.asset->url,
       "mainImageAlt": mainImage.alt,       
