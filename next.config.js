@@ -1,5 +1,22 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  webpack: (config, { isServer }) => {
+    // ... Other webpack configurations
+
+    config.resolve.alias['@'] = __dirname;
+
+    // ... Other webpack configurations
+
+    return config;
+  },
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: '/:projectName*',
+  //       destination: '/[projectName]',
+  //     },
+  //   ];
+  // },
   images: {
     remotePatterns: [
       {

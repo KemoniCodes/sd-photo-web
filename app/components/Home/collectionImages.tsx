@@ -4,6 +4,8 @@ import Image from "next/image";
 import { getCollection } from "@/sanity/sanity.query";
 import type { CollectionType } from "@/types";
 import { motion } from "framer-motion"
+import Link from 'next/link';
+
 
 const CollectionImages = () => {
   const [collections, setCollections] = useState<CollectionType[]>([]);
@@ -24,7 +26,6 @@ const CollectionImages = () => {
         console.error('Error fetching data:', error);
       }
     }
-
 
     fetchData();
   }, []);
@@ -48,6 +49,8 @@ const CollectionImages = () => {
   return (
     <div className="imagesGrid absolute top-0 grid-cols-3	grid gap-y-[27rem] w-[-webkit-fill-available]">
       {collections.map((collec) => (
+        console.log('COLLECTION' + collec),
+        <Link href={collec.slug.current} passHref>
         <div key={collec._id} className="hover:cursor-pointer relative"  >
           {
             hoverStates[collec._id] && (
@@ -77,6 +80,8 @@ const CollectionImages = () => {
           )}
 
         </div>
+        </Link>
+
       ))}
     </div>
   );
