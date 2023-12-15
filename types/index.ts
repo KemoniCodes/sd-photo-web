@@ -1,7 +1,9 @@
 export type CollectionType = {
   _id: string;
   collectionTitle: string;
-  slug: string;
+  slug: {
+    current: string;
+  };
   hoverColor: string;
   mainImage: {
     image: string;
