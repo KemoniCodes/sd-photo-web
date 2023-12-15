@@ -1,4 +1,4 @@
-import Hero from "./hero";
+import Hero from "./Hero";
 import CollectionImages from "./collectionImages"
 
 export default function Home() {
