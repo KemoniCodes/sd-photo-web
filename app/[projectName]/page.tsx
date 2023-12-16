@@ -30,12 +30,12 @@ function Project({ collectionTitle, _id, slug, hoverColor, mainImage, images, }:
             <Image className='h-[90vh] w-[90%]' src={`${mainImage}`}
               height={900} width={612} alt={mainImage.alt} priority={true} />
             {images.slice(0, 3).map((img, index) => (
-              <Image className='!h-[90vh] w-[90%]' src={`${img}`} height={900} width={612} alt={img.alt} priority={true} />
+              <Image key={index} className='!h-[90vh] w-[90%]' src={`${img}`} height={900} width={612} alt={img.alt} priority={true} />
             ))}
           </div>
           <div className="otherImages flex flex-wrap gap-x-2 gap-y-32 justify-center mt-32">
             {images.slice(3).map((img, index) => (
-              <Image className='' src={`${img}`} height={600} width={394} alt={img.alt} priority={true} />
+              <Image key={index} className='' src={`${img}`} height={600} width={394} alt={img.alt} priority={true} />
             ))}          
           </div>
         </div>
