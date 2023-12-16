@@ -44,6 +44,10 @@ h2 {
   @apply uppercase text-[149px] tracking-[1.609px];
 }
 
+h3 {
+  @apply uppercase text-[90px] leading-[5rem];
+}
+
 .home .imagesGrid > * {
   @apply min-w-[311px] max-w-[500px] h-[400px] relative;
   /* bg-gray-400  */
