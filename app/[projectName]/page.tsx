@@ -11,7 +11,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function Project({ collectionTitle, _id, slug, hoverColor, mainImage, images, }: CollectionType) {
+function Project({ collectionTitle, _id, slug, hoverColor, mainImage, images }: CollectionType) {
   const router = useRouter();
 
   const handleBackClick = () => {
