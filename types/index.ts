@@ -1,15 +1,16 @@
 export type CollectionType = {
-  _id: string;
-  collectionTitle: string;
-  slug: {
+  [x: string]: any;
+  _id?: string;
+  collectionTitle?: string;
+  slug?: {
     current: string;
   };
-  hoverColor: string;
-  mainImage: {
+  hoverColor?: string;
+  mainImage?: {
     image: string;
     alt: string;
   };
-  images: [
+  images?: [
     {
       image: string;
       alt: string;

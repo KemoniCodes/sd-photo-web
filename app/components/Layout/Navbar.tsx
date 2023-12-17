@@ -10,7 +10,7 @@ export default function Navbar() {
             <Image src={DarkLogo} width={50} alt='dark logo' />
           </Link>
         </div>
-        <ul className="navlist fixed right-0 mr-[27px] z-10">
+        <ul className="navlist fixed right-0 mr-[1rem] z-10">
           <li>projects</li>
           <li>portraits</li>
           <li>personal</li>
