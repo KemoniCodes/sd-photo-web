@@ -44,7 +44,7 @@ function Project({ collectionTitle, _id, slug, hoverColor, mainImage, images }: 
           </div>
           <div className="otherImages flex flex-wrap gap-x-2 gap-y-32 justify-center mt-32">
             {images?.slice(3).map((img, index) => (
-              <Image key={index} className='' src={`${img}`} height={600} width={394} alt={img.alt} priority={true} />
+              <Image key={index} className='object-cover' src={`${img}`} height={600} width={394} alt={img.alt} priority={true} />
             ))}
           </div>
         </div>
