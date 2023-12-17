@@ -29,7 +29,7 @@ body {
 }
 
 body {
-  @apply bg-ghostWite text-midnightBlack font-PPNeueMontreal mx-[27px] mt-6;
+  @apply bg-ghostWite text-midnightBlack font-PPNeueMontreal mx-[1rem] mt-6;
 }
 
 .navlist li {
@@ -46,6 +46,10 @@ h2 {
 
 h3 {
   @apply uppercase text-[90px] leading-[5rem];
+}
+
+h4,p {
+  @apply uppercase text-[30px];
 }
 
 .home .imagesGrid > * {
@@ -65,11 +69,11 @@ h3 {
 }
 
 .home .imagesGrid > div:nth-child(3) {
-  @apply mr-[27px] !justify-self-end;
+  @apply mr-[1rem] !justify-self-end;
 }
 
 .home .imagesGrid > div:nth-child(6n) {
-  @apply mr-[27px] !justify-self-end w-full;
+  @apply mr-[1rem] !justify-self-end w-full;
 }
 
 .home .imagesGrid > div:nth-child(6n) > * {
