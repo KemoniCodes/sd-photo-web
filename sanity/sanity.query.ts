@@ -31,3 +31,16 @@ export async function getCollectionBySlug(slug: string) {
     { slug }
   );
 }
+
+export async function getAboutInfo() {
+  return client.fetch(
+    groq`*[_type == "about"]{
+      "profileImage": profileImage.asset->url,
+      "profileImageAlt": profileImage.alt,
+      bio,
+      email,
+      "featuredBrands": featuredBrands[].asset->url,
+      "featuredBrandsAlts":featuredBrands[].alt
+    }`
+  );
+}

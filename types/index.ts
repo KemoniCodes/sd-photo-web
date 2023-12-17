@@ -17,4 +17,19 @@ export type CollectionType = {
     }
   ];
 };
+
+export type AboutType = {
+  profileImage: {
+    image: string;
+    alt: string;
+  };
+  bio: string;
+  email: string;
+  featuredBrands: [
+    {
+      image: string;
+      alt: string;
+    }
+  ]
+}
   

@@ -1,4 +1,5 @@
 import collection from "./collection";
+import aboutPage from "./aboutPage";
 
-export const schemaTypes = [collection];
+export const schemaTypes = [collection, aboutPage];
 
