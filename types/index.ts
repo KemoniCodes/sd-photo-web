@@ -1,8 +1,8 @@
 export type CollectionType = {
   [x: string]: any;
-  _id?: string;
+  _id: string;
   collectionTitle?: string;
-  slug?: {
+  slug: {
     current: string;
   };
   hoverColor?: string;

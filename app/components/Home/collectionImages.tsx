@@ -64,17 +64,20 @@ const CollectionImages = () => {
               )
             }
 
-            <Image
-              alt={collec.mainImage.alt}
-              src={`${collec.mainImage}`}
-              width={311}
-              height={400}
-              onMouseEnter={() => handleMouseEnter(collec._id)}
-              onMouseLeave={() => handleMouseLeave(collec._id)}
-              priority={true}
-              className={`transition-transform transform w-auto' ${hoverStates[collec._id] ? ' transition-imageHover absolute z-10 scale-125 ease-in duration-400' : ''
-                }`}
-            />
+            {collec.mainImage && (
+              <Image
+                alt={collec.mainImage.alt}
+                src={`${collec.mainImage}`}
+                width={311}
+                height={400}
+                onMouseEnter={() => handleMouseEnter(collec._id)}
+                onMouseLeave={() => handleMouseLeave(collec._id)}
+                priority={true}
+                className={`transition-transform transform w-auto' ${hoverStates[collec._id] ? ' transition-imageHover absolute z-10 scale-125 ease-in duration-400' : ''
+                  }`}
+              />
+            )}
+
             {hoverStates[collec._id] && (
               <h2 className='z-10 text-ghostWite !w-auto fixed bottom-0 ml-[27px] left-0 text-left leading-[9rem]'>{collec.collectionTitle}</h2>
             )}

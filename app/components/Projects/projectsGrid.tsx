@@ -34,7 +34,7 @@ function ProjectCard({ collectionTitle, mainImage, hoverColor, _id, slug }: Coll
     );
 }
 
-const projectsGrid = () => {
+const ProjectsGrid = () => {
     //initialize the collection by setting the iniital state to be the collection type or before data fetches to be null
     const [collections, setCollections] = useState<CollectionType[] | null>(null);
 
@@ -56,11 +56,11 @@ const projectsGrid = () => {
         <>
             <div className="projectsGrid grid grid-cols-3 gap-2">
                 {collections.map((collection) => (
-                    <ProjectCard key={collection._id} mainImage={collection.mainImage} hoverColor={collection.hoverColor} collectionTitle={collection.collectionTitle} slug={collection.slug} />
+                    <ProjectCard key={collection._id} _id={collection._id} mainImage={collection.mainImage} hoverColor={collection.hoverColor} collectionTitle={collection.collectionTitle} slug={collection.slug} />
                 ))}
             </div>
         </>
     )
 }
 
-export default projectsGrid
+export default ProjectsGrid
