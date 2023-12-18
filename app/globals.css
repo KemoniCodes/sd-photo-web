@@ -32,8 +32,12 @@ body {
   @apply bg-ghostWite text-midnightBlack font-PPNeueMontreal mx-[1rem] mt-6;
 }
 
-.navlist li {
+.navlist li, h5 {
   @apply uppercase text-[17.452px] tracking-[0.349px] leading-[1.3rem] text-right;
+}
+
+.footer h5 {
+@apply text-center;
 }
 
 h1 {
@@ -56,40 +60,69 @@ h4,p {
   @apply min-w-[311px] max-w-[500px] h-[400px] relative;
   /* bg-gray-400  */
 }
-.home .imagesGrid > div:nth-child(odd) {
-  @apply top-16;
+.home .imagesGrid > a:nth-child(odd) {
+  @apply top-36;
 }
 
-.home .imagesGrid > div:nth-child(2) {
+.home .imagesGrid > a:nth-child(2) {
   @apply justify-self-center w-full;
+  text-align: -webkit-center;
 }
 
-.home .imagesGrid > div:nth-child(2) > * {
+.home .imagesGrid > a:nth-child(2) > * {
   @apply w-[80%];
 }
 
-.home .imagesGrid > div:nth-child(3) {
-  @apply mr-[1rem] !justify-self-end;
+.home .imagesGrid > a:nth-child(3) {
+  @apply mr-[1rem] top-48 !justify-self-end;
 }
 
-.home .imagesGrid > div:nth-child(6n) {
+.home .imagesGrid > a:nth-child(4) {
+  @apply top-72;
+}
+
+.home .imagesGrid > a:nth-child(5) {
+  @apply top-40;
+}
+
+.home .imagesGrid > a:nth-child(4) > div img {
+  @apply w-[85%];
+}
+
+.home .imagesGrid > a:nth-child(3) > div img {
+  @apply w-[360px];
+}
+
+.home .imagesGrid > a:nth-child(6n) {
   @apply mr-[1rem] !justify-self-end w-full;
+  text-align: -webkit-center;
 }
 
-.home .imagesGrid > div:nth-child(6n) > * {
+.home .imagesGrid > a:nth-child(6n) > * {
   @apply w-full;
 }
 
-.home .imagesGrid > div:nth-child(7n) {
-  @apply w-full -top-24;
+.home .imagesGrid > a:nth-child(7n) {
+  @apply w-full top-24;
 }
 
-.home .imagesGrid > div:nth-child(7n) > * {
+.home .imagesGrid > a:nth-child(7n) > * {
   @apply w-[80%];
 }
 
+.home .imagesGrid > a:nth-child(8)  > div img {
+  @apply w-[90%];
+}
 
-.home .imagesGrid > div:nth-child(odd):not(:first-child) {
+.home .imagesGrid > a:nth-child(9) {
+  @apply -top-12 !justify-self-end mr-4;
+}
+
+.home .imagesGrid > a:nth-child(9)  > div img {
+  @apply w-[100%];
+}
+
+.home .imagesGrid > a:nth-child(odd):not(:first-child) {
   @apply justify-self-center;
 }
 

@@ -47,7 +47,7 @@ const CollectionImages = () => {
   };
 
   return (
-    <div className="imagesGrid absolute top-0 grid-cols-3	grid gap-y-[27rem] w-[-webkit-fill-available]">
+    <div className="imagesGrid absolute top-0 grid-cols-3	grid gap-y-[27rem] w-[-webkit-fill-available] pb-48">
       {collections.map((collec) => (
         console.log('COLLECTION' + collec),
         <Link key={collec._id} href={collec.slug.current} passHref>
@@ -73,7 +73,7 @@ const CollectionImages = () => {
                 onMouseEnter={() => handleMouseEnter(collec._id)}
                 onMouseLeave={() => handleMouseLeave(collec._id)}
                 priority={true}
-                className={`transition-transform transform w-auto' ${hoverStates[collec._id] ? ' transition-imageHover absolute z-10 scale-125 ease-in duration-400' : ''
+                className={`transition-transform transform w-auto' ${hoverStates[collec._id] ? ' transition-imageHover sticky z-10 scale-125 ease-in duration-400' : ''
                   }`}
               />
             )}
