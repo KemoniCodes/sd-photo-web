@@ -44,3 +44,14 @@ export async function getAboutInfo() {
     }`
   );
 }
+
+export async function getHomepageVideo() {
+  const result = await client.fetch(
+    groq`*[_type == "homepage"]{
+      "hpVideo": hpVideo.asset._ref
+    }`
+  );
+
+  return result.length > 0 ? result[0] : {};
+}
+

@@ -32,4 +32,12 @@ export type AboutType = {
     }
   ]
 }
+
+export type HomeType = {
+  [x: string]: any;
+  homeVideo: {
+    video: string;
+    alt: string;
+  }
+}
   

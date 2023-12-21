@@ -47,7 +47,7 @@ const CollectionImages = () => {
   };
 
   return (
-    <div className="imagesGrid absolute top-0 grid-cols-3	grid gap-y-[27rem] w-[-webkit-fill-available] pb-48">
+    <div className="imagesGrid absolute top-0 grid-cols-3	lg:grid hidden gap-y-[27rem] w-[-webkit-fill-available] pb-48 ">
       {collections.map((collec) => (
         console.log('COLLECTION' + collec),
         <Link key={collec._id} href={collec.slug.current} passHref>

@@ -36,12 +36,12 @@ body {
   @apply uppercase text-[17.452px] tracking-[0.349px] leading-[1.3rem] text-right;
 }
 
-.footer h5 {
-@apply text-center;
+h1 {
+  @apply uppercase sm:text-[260.332px] tracking-[2.603px] leading-[14.5rem];
 }
 
-h1 {
-  @apply uppercase text-[260.332px] tracking-[2.603px] leading-[14.5rem];
+.nameDiv h1 {
+  @apply lg:text-[260.332px] text-[4.4rem] lg:leading-[14.5rem] leading-[56.332px]
 }
 
 h2 {
