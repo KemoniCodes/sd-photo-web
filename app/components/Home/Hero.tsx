@@ -42,7 +42,7 @@ export default function Hero() {
           preload="auto"
           width="100%"
           height="100vh"
-          // playsInline
+          playsInline
           // autoPlay
           id="autoplayVideo"
           muted
