@@ -43,7 +43,7 @@ export default function Hero() {
           width="100%"
           height="100vh"
           playsInline
-          // autoPlay
+          autoPlay
           id="autoplayVideo"
           muted
         >
