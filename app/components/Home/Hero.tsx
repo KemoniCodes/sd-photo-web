@@ -27,7 +27,7 @@ export default function Hero() {
 
   return (
     <>
-      <style jsx global>{`
+      <style jsx>{`
         body {
           // margin: 0;
           // margin-top: 1.5rem;

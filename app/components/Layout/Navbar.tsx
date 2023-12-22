@@ -11,12 +11,16 @@ export default function Navbar() {
           </Link>
         </div>
         <ul className="navlist fixed right-0 mr-[1rem] z-10">
-          <li>projects</li>
+          <Link href={'/projects'}>
+            <li>projects</li>
+          </Link>
           <li>portraits</li>
           <li>personal</li>
           <li>motion</li>
           <li>shop</li>
-          <li>about</li>
+          <Link href={'/about'}>
+            <li>about</li>
+          </Link>
         </ul>
       </nav>
     </>
