@@ -41,7 +41,7 @@ h1 {
 }
 
 .nameDiv h1 {
-  @apply lg:text-[260.332px] text-[4.4rem] lg:leading-[14.5rem] leading-[56.332px]
+  @apply lg:text-[260.332px] text-[4.2rem] lg:leading-[14.5rem] leading-[56.332px]
 }
 
 h2 {
