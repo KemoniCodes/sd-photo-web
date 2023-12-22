@@ -33,7 +33,7 @@ export default function Hero() {
           // margin-top: 1.5rem;
           // margin-left: 1rem;
           padding: 0;
-          overflow-y: hidden;
+          overflow-y: hidden !important;
         }
       `}</style>
       <div className="-m-[1.5rem] lg:hidden block">
