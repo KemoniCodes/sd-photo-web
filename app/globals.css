@@ -29,7 +29,7 @@ body {
 }
 
 body {
-  @apply bg-ghostWite text-midnightBlack font-PPNeueMontreal mx-[1rem] mt-6 !overflow-x-hidden !overflow-y-auto;
+  @apply bg-ghostWite text-midnightBlack font-PPNeueMontreal mx-[1rem] mt-6 !overflow-x-hidden lg:!overflow-y-auto !overflow-y-hidden;
 }
 
 .navlist li, h5 {
