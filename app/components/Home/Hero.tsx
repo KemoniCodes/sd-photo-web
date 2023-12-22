@@ -42,10 +42,10 @@ export default function Hero() {
           preload="auto"
           width="100%"
           height="100vh"
-          playsInline
+          // playsInline
           // autoPlay
           id="autoplayVideo"
-          // muted
+          muted
         >
           <source src={"https://cdn.sanity.io/files/00nf1c6w/production/c919d040b2c36174b861f243d5d49a8865b61246.mp4"} type="video/mp4" />
         </video>
