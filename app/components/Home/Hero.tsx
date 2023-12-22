@@ -27,13 +27,13 @@ export default function Hero() {
 
   return (
     <>
-      <style jsx>{`
+      <style global jsx>{`
         body {
           // margin: 0;
           // margin-top: 1.5rem;
           // margin-left: 1rem;
           padding: 0;
-          overflow-y: hidden !important;
+          overflow-y: hidden;
         }
       `}</style>
       <div className="-m-[1.5rem] lg:hidden block">
