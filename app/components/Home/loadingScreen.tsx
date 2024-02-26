@@ -30,8 +30,8 @@ const LoadingScreen = () => {
                 loadingScreen.style.height = '0';
                 heroSection.style.opacity = '1';
                 setTimeout(() => {
-                    window.addEventListener('wheel', handleScroll);
-                    document.body.style.overflowY = 'scroll';
+                    // window.addEventListener('wheel', handleScroll);
+                    // document.body.style.overflowY = 'scroll';
                 }, 100);
             }, 0);
         }
@@ -57,6 +57,6 @@ const LoadingScreen = () => {
 
 export default LoadingScreen;
 
-function handleScroll(this: Window, ev: WheelEvent) {
-    throw new Error('Function not implemented.');
-}
+// function handleScroll(this: Window, ev: WheelEvent) {
+//     throw new Error('Function not implemented.');
+// }
