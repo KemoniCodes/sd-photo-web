@@ -30,7 +30,7 @@ body {
 }
 
 body {
-  @apply bg-ghostWite text-midnightBlack font-PPNeueMontreal mx-[1rem] mt-6 !overflow-x-hidden lg:!overflow-y-auto;
+  @apply bg-ghostWite text-midnightBlack font-PPNeueMontreal mx-[1rem] mt-6 !overflow-x-hidden lg:!overflow-y-auto scroll-smooth;
 }
 
 .navlist li, h5 {
@@ -45,7 +45,7 @@ h1 {
   @apply uppercase sm:text-[260.332px] tracking-[2.603px] leading-[14.5rem];
 }
 
-.nameDiv h1 {
+.nameDiv h1, #loadingPercent {
   @apply lg:text-[260.332px] text-[4.05rem] lg:leading-[14.5rem] leading-[55.332px]
 }
 

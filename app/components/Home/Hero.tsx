@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { getHomepageVideo } from "@/sanity/sanity.query"
 import { HomeType } from "@/types"
+import LoadingScreen from "./loadingScreen"
 
 
 export default function Hero() {
@@ -22,7 +23,8 @@ export default function Hero() {
   }, [hpVideo])
 
   if (!hpVideo) {
-    return <p>Loading...</p>;
+    return <LoadingScreen/>
+    // return <p>Loading...</p>;
   }
 
   return (
