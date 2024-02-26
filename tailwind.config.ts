@@ -10,13 +10,15 @@ const config: Config = {
     extend: {
       colors: {
         ghostWite: "var(--ghostWhite)",
-        midnightBlack: "var(--midnightBlack)"
+        midnightBlack: "var(--midnightBlack)",
+        slateGray: "var(--slateGray)"
       },
       fontFamily: {
         "PPNeueMontreal": "var(--PPNeueMontreal)"
       },
       transitionProperty: {
-        "imageHover": " 0.2s ease"
+        "imageHover": " 0.2s ease",
+        "linkHover": "var(--slateGray) 0.2s ease"
       }
     },
   },

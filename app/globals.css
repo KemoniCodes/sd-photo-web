@@ -12,6 +12,7 @@
 :root {
   --ghostWhite: #fbfbfb;
   --midnightBlack: #0a0a0a;
+  --slateGray: #1d4ed8;
   --PPNeueMontreal: "PPNeueMontreal-Book";
 }
 
@@ -34,6 +35,10 @@ body {
 
 .navlist li, h5 {
   @apply uppercase text-[17.452px] tracking-[0.349px] leading-[1.3rem] text-right;
+}
+
+.navlist a {
+  @apply transition-linkHover hover:text-slateGray
 }
 
 h1 {
