@@ -40,7 +40,7 @@ export default function Hero() {
       `}</style>
       <div className="-m-[1.5rem] lg:hidden block">
         <video
-          className=" h-[102vh] object-cover"
+          className=" h-[110vh] object-cover"
           preload="auto"
           width="100%"
           height="100vh"
