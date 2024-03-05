@@ -9,10 +9,10 @@ import Arrow from '../../../public/arrow.svg';
 function Profile({ profileImage, bio, email, featuredBrands }: AboutType) {
     return (
         <>
-            <div className="profileImage w-[45%]">
+            <div className="profileImage w-full lg:w-[45%]">
                 <Image src={`${profileImage}`} width={500} height={567} alt={profileImage?.alt} className='w-full object-cover h-[80vh] object-top' />
             </div>
-            <div className="profileInfo w-[60%]">
+            <div className="profileInfo w-full lg:w-[60%]">
                 <p className='whitespace-pre-wrap text-justify'>{bio}</p>
                 <p className='mt-14 flex cursor-pointer'><b>{email}</b><Image className='w-[1.4rem] ml-[.3rem]' width={10} height={10} src={Arrow} alt='arrow' /></p>
             </div>
@@ -39,7 +39,7 @@ const About = () => {
 
     return (
         <>
-            <div className="profile flex gap-12">
+            <div className="profile flex lg:flex-row flex-col gap-12">
                 {about.map((profile) => (
                     <>
                         <Profile profileImage={profile.profileImage} bio={profile.bio} email={profile.email} featuredBrands={profile.featuredBrands} />
