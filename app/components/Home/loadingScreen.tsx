@@ -29,10 +29,10 @@ const LoadingScreen = () => {
                 loadingScreen.style.opacity = '0';
                 loadingScreen.style.height = '0';
                 heroSection.style.opacity = '1';
-                setTimeout(() => {
-                    // window.addEventListener('wheel', handleScroll);
-                    // document.body.style.overflowY = 'scroll';
-                }, 100);
+                // setTimeout(() => {
+                //     window.addEventListener('wheel', handleScroll);
+                //     document.body.style.overflowY = 'scroll';
+                // }, 100);
             }, 0);
         }
 

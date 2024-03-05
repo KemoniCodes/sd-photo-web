@@ -54,7 +54,7 @@ const ProjectsGrid = () => {
     //display all collections in a grid and on hover make image smaller and display hover color in the bg and also 
     return (
         <>
-            <div className="projectsGrid grid grid-cols-3 gap-2">
+            <div className="projectsGrid grid grid-cols-1 gap-2">
                 {collections.map((collection) => (
                     <ProjectCard key={collection._id} _id={collection._id} mainImage={collection.mainImage} hoverColor={collection.hoverColor} collectionTitle={collection.collectionTitle} slug={collection.slug} />
                 ))}
