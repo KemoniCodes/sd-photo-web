@@ -38,7 +38,7 @@ export default function Hero() {
 
 
     gsap.utils.toArray(".line").forEach((element) => {
-      const split = new SplitText(element, { type: "chars" });
+      const split = new SplitText(element as HTMLElement, { type: "chars" });
       gsap.from(split.chars, {
         duration: 1,
         y: 100,
