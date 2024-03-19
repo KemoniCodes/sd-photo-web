@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import SmoothScroller from './utils/smoothScroll'
 
 import Navbar from './components/Layout/Navbar';
 const inter = Inter({ subsets: ['latin'] })
@@ -17,10 +18,13 @@ export default function RootLayout({
 }) {
 
   return (
-    <html lang="en" className='scroll-smooth'>
+    <html lang="en" className=''>
       <body>
-        <Navbar/>
-        {children}</body>
+      <Navbar />
+        <SmoothScroller>
+          {children}
+        </SmoothScroller>
+      </body>
     </html>
   )
 }
