@@ -57,9 +57,9 @@ function Project({ collectionTitle, _id, slug, hoverColor, mainImage, images }: 
   return (
     <>
       <div className="project flex">
-        <div className="projectName w-full lg:w-[30%] relative lg:fixed h-screen text-left">
+        <div className="projectName w-full lg:w-[30%] relative lg:fixed lg:h-screen h-[42.5vh] text-left">
           <h3 className='break-words w-[90vw] lg:w-auto'>{collectionTitle}</h3>
-          <h3 className='absolute bottom-0 pb-20 cursor-pointer' onClick={handleBackClick}>back</h3>
+          <h3 className='absolute bottom-0 pb-20 cursor-pointer lg:text-[90px] text-[2rem]' onClick={handleBackClick}>back</h3>
         </div>
 
         <div className="projectImages projectImagesContainer absolute left-0 mt-40 lg:mt-0 lg:left-[35%] pb-32 ">
@@ -127,7 +127,7 @@ const ProjectPage = () => {
   }, [slug]);
   console.log('this', collection)
 
-  if (!collection) {
+  if (!collection?.images) {
     return <p>Loading...</p>;
   }
 
