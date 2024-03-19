@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { getHomepageVideo } from "@/sanity/sanity.query";
 import { HomeType } from "@/types";
+import { motion } from "framer-motion"
 import { gsap } from "gsap";
-import { SplitText } from "gsap-trial/SplitText";
 import LoadingScreen from "./loadingScreen";
 
-gsap.registerPlugin(SplitText);
 
 export default function Hero() {
   const [hpVideo, setHpVideo] = useState<HomeType | null>(null);
@@ -37,18 +36,23 @@ export default function Hero() {
     // });
 
 
-    gsap.utils.toArray(".line").forEach((element) => {
-      const split = new SplitText(element as HTMLElement, { type: "chars" });
-      gsap.from(split.chars, {
-        duration: 1,
-        y: 100,
-        autoAlpha: 0,
-        stagger: 0.035,
-        ease: "power4.out",
-      });
-    });
+    // gsap.utils.toArray(".line").forEach((element) => {
+    //   const split = new SplitText(element as HTMLElement, { type: "chars" });
+    //   gsap.from(split.chars, {
+    //     duration: 1,
+    //     y: 100,
+    //     autoAlpha: 0,
+    //     stagger: 0.035,
+    //     ease: "power4.out",
+    //   });
+    // });
 
   }, []);
+
+  useEffect(()=> {
+    gsap.to(".line", { y: 200 })
+
+  }, [])
 
 
   if (!hpVideo) {

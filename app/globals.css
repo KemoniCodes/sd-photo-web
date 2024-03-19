@@ -26,11 +26,11 @@
 
 html,
 body {
-  @apply h-full;
+  /* @apply h-full; */
 }
 
 body {
-  @apply bg-ghostWite text-midnightBlack font-PPNeueMontreal mx-[1rem] mt-6 !overflow-x-hidden lg:!overflow-y-auto scroll-smooth;
+  @apply bg-ghostWite text-midnightBlack font-PPNeueMontreal mx-[1rem] mt-6 !overflow-x-hidden lg:!overflow-y-auto;
 }
 
 .navlist li, h5 {
