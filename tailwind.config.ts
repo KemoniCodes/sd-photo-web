@@ -18,7 +18,7 @@ const config: Config = {
       },
       transitionProperty: {
         "imageHover": " 0.2s ease",
-        "linkHover": "var(--slateGray) 0.2s ease"
+        "linkHover": "#e30613 0.2s ease"
       }
     },
   },

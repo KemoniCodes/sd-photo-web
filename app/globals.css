@@ -38,7 +38,7 @@ body {
 }
 
 .navlist a {
-  @apply transition-linkHover hover:text-slateGray
+  @apply transition-linkHover hover:text-[#e30613]
 }
 
 h1 {
